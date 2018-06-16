@@ -25,20 +25,20 @@ Solution?
 
 1. CSS in JS. 
 
-  -This eliminates all issues surrounding the css files, but it has two down side. First, CSS in JS in my opinion are less readable and
+  - This eliminates all issues surrounding the css files, but it has two down side. First, CSS in JS in my opinion are less readable and
   editable, for they require more setup syntax, whereas pure css and other css preprocessors are plain and simple. Second, it increases
   the size of the bundle.js, and the html wouldn't be styled until the bundle.js is downloaded. As the result, the user would be staring
   at unstyled html page for a few seconds.
 
 2. Critical CSS
 
-  -To avoid the scenario mentioned in the first point, the server could send back necessary css file while the download is in action, and this will prevent the user from viewing the raw html page. However, it didn't solve the readability of the file, and setting up can be complex.
+  - To avoid the scenario mentioned in the first point, the server could send back necessary css file while the download is in action, and this will prevent the user from viewing the raw html page. However, it didn't solve the readability of the file, and setting up can be complex.
 
 3. Plugins: Isomorphic Style Loader
 
-  -Downside and upside? Haven't got it to work yet lol
+  - Downside and upside? Haven't got it to work yet lol
 
 4. Forget about SSR
 
-  -No.
+  - No.
 
