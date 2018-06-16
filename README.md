@@ -25,7 +25,10 @@ Solution?
 
 1. CSS in JS. 
 
-  This eliminates all issues surrounding the css files, but it has two down side. First, CSS in JS in my opinion are less readable and  editable, for they require more setup syntax, whereas pure css and other css preprocessors are plain and simple. Second, it increases the size of the bundle.js, and the html wouldn't be styled until the bundle.js is downloaded. As the result, the user would be staring at unstyled html page for a few seconds.
+  This eliminates all issues surrounding the css files, but it has two down side. First, CSS in JS in my opinion are less readable and
+  editable, for they require more setup syntax, whereas pure css and other css preprocessors are plain and simple. Second, it increases
+  the size of the bundle.js, and the html wouldn't be styled until the bundle.js is downloaded. As the result, the user would be staring
+  at unstyled html page for a few seconds.
 
 2. Critical CSS
 
