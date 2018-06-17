@@ -2,7 +2,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const browserConfig = {
     mode: 'development',
-    entry: './src',
+    entry: './src/index.js',
     module: {
         rules: [
             {
@@ -19,11 +19,11 @@ const browserConfig = {
             {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
-                    fallback: 'style-loader',
+                    
                     use: [
                         {
                             loader: 'css-loader',
-                            options: {
+                            query: {
                                 modules: true,
                                 localIdentName: '[name]__[local]__[hash:base64:5]'
                             }

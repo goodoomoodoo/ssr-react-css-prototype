@@ -10,10 +10,6 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactCssModules = require('react-css-modules');
-
-var _reactCssModules2 = _interopRequireDefault(_reactCssModules);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -23,7 +19,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var styles = {
-    'container': 'App__container___2_U6q'
+    'container': 'App__container__2_U6q'
 };
 
 var App = function (_React$Component) {
@@ -40,7 +36,7 @@ var App = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { styleName: 'container' },
+                { className: styles.container },
                 'Hello'
             );
         }
@@ -49,4 +45,4 @@ var App = function (_React$Component) {
     return App;
 }(_react2.default.Component);
 
-exports.default = (0, _reactCssModules2.default)(App, styles);
+exports.default = App;

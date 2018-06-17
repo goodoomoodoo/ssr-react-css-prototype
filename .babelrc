@@ -11,7 +11,15 @@
 
         },
         "lib": {
-            "plugins": ["css-modules-transform"]
+            "plugins": [
+                [
+                    "css-modules-transform",
+                    {
+                        "generateScopedName": "[name]__[local]__[hash:base64:5]",
+                        "extensions": [".css"]
+                    }
+                ]
+            ]
         }
     }
 }

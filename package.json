@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "babel": "babel server.js --out-file ./build/server.js && babel src/template.js -d build/views && BABEL_ENV=lib babel src/App.js -d build/views"
+    "babel": "babel server.js --out-file ./build/server.js && BABEL_ENV=lib babel src/App.js -d build/views"
   },
   "author": "Arvin Lin",
   "license": "ISC",
