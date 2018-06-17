@@ -37,7 +37,7 @@ const browserConfig = {
         new ExtractTextPlugin("style.css")
     ],
     output: {
-        path: __dirname + '/build/browser',
+        path: __dirname + '/build/assets',
         filename: 'bundle.js'
     }
 };

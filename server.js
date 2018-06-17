@@ -1,22 +1,20 @@
 import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import fs from 'fs';
 import path from 'path';
-import App from './server/App';
+import App from './views/src/App';
+import template from './views/src/template';
 
 const app = express();
-const indexHTML = fs.readFileSync( __dirname + '/browser/index.html' , 'utf8' );
 const PORT = process.env.PORT || 3000;
 
-app.use( express.static('browser') );
+app.use( '/assets', express.static('assets') );
 
 app.get( '/' , ( req , res ) => {
     let content = renderToString(
         <App />
     );
-    let finalHTML = indexHTML.replace( '<!--App-->' , content );
-    console.log( finalHTML );
+    let finalHTML = template( 'CSS in JS', content );
     res.end( finalHTML );
 });
 

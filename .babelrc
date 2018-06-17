@@ -3,7 +3,15 @@
         "es2015",
         "react"
     ],
-    "plugins": [
-        
-    ]
+    "env":{
+        "development": {
+
+        },
+        "production": {
+
+        },
+        "lib": {
+            "plugins": ["css-modules-transform"]
+        }
+    }
 }
