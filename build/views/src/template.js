@@ -10,7 +10,7 @@ module.exports = function ( title , content = '' )
             </head>
             <body>
                 <div id="root">${content}</div>
-                <script src="/assets/bundle.js"></script>
+                <script type="text/Javascript" src="/assets/bundle.js"></script>
             </body>
         </html>
     `;
