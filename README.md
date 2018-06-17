@@ -17,6 +17,13 @@ I still need to do research on such topic, for I can't conceive a proper solutio
 1. Two .babelrc files (Nothing I've read so far suggested this...)
 2. Compile everything through webpack
 
+Update: 
+
+The collision between babel and webpack can be sorted out by defining environment on babel. On webpack, the environment is development. On babel, the environment is lib. When running the babel script, setting the environment to lib will divert the babel setting from the webpack setting
+````````````
+> BABEL_ENV=lib babel [command]
+````````````
+
 ### 2. Unable to match the server html to browser html
 
 This issue is inextricable to the first issue, for its main reason of occurence is due to the use of two different commands. The issue occurs as the babel can't produce the same class name as the webpack has produced. This issue has plenty of workaround, but they aren't sufficient enough to escape the label, "workaround." 
@@ -38,4 +45,8 @@ Solution?
 4. Forget about SSR
 
    - No.
+   
+Update:
+
+The error is caused by the incorrect setup of the .babelrc and webpack.config.js. This error no longer occur after the debug.
 
